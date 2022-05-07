@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promille kalkulator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="main">
+        <header>Promille kalkulator</header>
+        <main>
+            <article class="arts">
+                <p>Vekt <input id="vekt" type="number" min="0" max="500" required></p>
+                <p>Male <input id="Male" name="type" type="radio" required></p>
+                <p>Femail <input id="Femail" name="type" type="radio" required></p>
+                <p>Starter <input id="timeStart" type="time" required></p>
+                <p>Avsluter<input id="timeStop" type="time"required></p>
+            </article>
+            <article class="arts">
+                <p>lettøl, 2.5% : <input value="0" id="lettol" type="number" min="0"></p>
+                <p>Pils, 4.5% : <input value="0" id="pils" type="number" min="0"></p>
+                <p>Rusbrus, 4.7% : <input value="0" id="rusbrus" type="number" min="0"></p>
+                <p>Vil, 12% : <input value="0" id="vin" type="number" min="0"></p>
+                <p>Vodka, 40% : <input value="0" id="vodka" type="number" min="0"></p>
+            </article>
+        </main>
+        <footer>
+            <input id="Tele" type="button" value="Få resultater">
+            <div id="resInfo">
+                <h1>Informasjon om alt</h1>
+            </div>
+        </footer>
+    </div>
+<script src="Script.js"></script>
+</body>
+</html>

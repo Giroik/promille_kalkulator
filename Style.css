@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url("bilder/fest.gif");
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+.main
+{
+    position: relative;
+    top:25vh;
+    min-width: 50%;
+    background-color: red;
+    min-height: 50vh;
+    background-color: rgba(160, 160, 246, 0.6);
+}
+header
+{
+    text-align: center;
+    padding: 5px;
+}
+main
+{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+.arts
+{
+    width: 40%;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pElement
+{
+    width: 200px;
+    font-size:20px;
+}
+.infoDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
