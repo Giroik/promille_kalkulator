@@ -4,15 +4,23 @@ body{
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    background-image: url("bilder/fest.gif");
+    background-image: linear-gradient(-90deg,#2fc79c,#647909,#0068ff);
     background-size: 100%;
     background-attachment: fixed;
 
 }
+.AnetVerdi
+{
+    display: flex;
+    justify-content: center;
+}
+input
+{
+    width: 50px;
+}
 .main
 {
-    position: relative;
-    top:25vh;
+    margin: 100px;
     min-width: 50%;
     background-color: red;
     min-height: 50vh;
@@ -23,15 +31,17 @@ header
     text-align: center;
     padding: 5px;
 }
-main
+form
 {
+    text-align: center;
     padding: 0px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .arts
 {
-    width: 40%;
+    width: 50%;
 }
 footer
 {
@@ -50,4 +60,8 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+#Tele
+{
+    width: 100px;
 }

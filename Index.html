@@ -9,25 +9,129 @@
     <div class="main">
         <header>Promille kalkulator</header>
         <main>
-            <article class="arts">
-                <p>Vekt <input id="vekt" type="number" min="0" max="500" required></p>
-                <p>Male <input id="Male" name="type" type="radio" required></p>
-                <p>Femail <input id="Femail" name="type" type="radio" required></p>
-                <p>Starter <input id="timeStart" type="time" required></p>
-                <p>Avsluter<input id="timeStop" type="time"required></p>
-            </article>
-            <article class="arts">
-                <p>lettøl, 2.5% : <input value="0" id="lettol" type="number" min="0"></p>
-                <p>Pils, 4.5% : <input value="0" id="pils" type="number" min="0"></p>
-                <p>Rusbrus, 4.7% : <input value="0" id="rusbrus" type="number" min="0"></p>
-                <p>Vil, 12% : <input value="0" id="vin" type="number" min="0"></p>
-                <p>Vodka, 40% : <input value="0" id="vodka" type="number" min="0"></p>
-            </article>
+            <form>
+                <article class="arts">
+                    <p>Vekt <input id="vekt" type="number" min="0" max="500" required></p>
+                    <p>Male <input id="Male" name="type" type="radio" required ></p>
+                    <p>Femail <input id="Femail" name="type" type="radio" required></p>
+                    <p>Starter: <select id="timeStart"  required>
+                        <option value="00:00"> 00:00 </option>
+                        <option value="00:30">00:30</option>
+                        <option value="01:00">01:00</option>
+                        <option value="01:30">01:30</option>
+                        <option value="02:00">02:00</option>
+                        <option value="02:30">02:30</option>
+                        <option value="03:00">03:00</option>
+                        <option value="03:30">03:30</option>
+                        <option value="04:00">04:00</option>
+                        <option value="04:30">04:30</option>
+                        <option value="05:00">05:00</option>
+                        <option value="05:30">05:30</option>
+                        <option value="06:00">06:00</option>
+                        <option value="06:30">06:30</option>
+                        <option value="07:00">07:00</option>
+                        <option value="07:30">07:30</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:30">08:30</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:3</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:00">23:00</option>
+                        <option value="23:30">23:30</option>
+                    </select></p>
+                    <p>Avsluter<select id="timeStop"  required>
+                        <option value="00:00"> 00:00 </option>
+                        <option value="00:30">00:30</option>
+                        <option value="01:00">01:00</option>
+                        <option value="01:30">01:30</option>
+                        <option value="02:00">02:00</option>
+                        <option value="02:30">02:30</option>
+                        <option value="03:00">03:00</option>
+                        <option value="03:30">03:30</option>
+                        <option value="04:00">04:00</option>
+                        <option value="04:30">04:30</option>
+                        <option value="05:00">05:00</option>
+                        <option value="05:30">05:30</option>
+                        <option value="06:00">06:00</option>
+                        <option value="06:30">06:30</option>
+                        <option value="07:00">07:00</option>
+                        <option value="07:30">07:30</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:30">08:30</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:3</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:00">23:00</option>
+                        <option value="23:30">23:30</option>
+                    </select></p>
+                </article>
+                <article class="arts">
+                    <p>lettøl, 2.5% : <input value="0" id="lettol" type="number" min="0"> Liter</p>
+                    <p>Pils, 4.5% : <input value="0" id="pils" type="number" min="0"> Liter</p>
+                    <p>Rusbrus, 4.7% : <input value="0" id="rusbrus" type="number" min="0"> Liter</p>
+                    <p>Vil, 12% : <input value="0" id="vin" type="number" min="0"> Liter</p>
+                    <p>Vodka, 40% : <input value="0" id="vodka" type="number" min="0"> Liter</p>
+                    <p id="AnetVerdi">Anet, <input value="0" id="anet" min="0">%: <input value="0" id="anetLiter" type="number" min="0"> Liter</p>
+                </article>
+                <input id="Tele" type="button" value="Få resultater">
+            </form>
+
         </main>
         <footer>
-            <input id="Tele" type="button" value="Få resultater">
+
+            <h1>Informasjon om alt</h1>
             <div id="resInfo">
-                <h1>Informasjon om alt</h1>
+
             </div>
         </footer>
     </div>
